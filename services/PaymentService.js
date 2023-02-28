@@ -18,9 +18,9 @@ class PaymentService {
         }
       ],
       back_urls: {
-        failure: "/failure",
-        pending: "/pending",
-        success: "/success"
+        failure: "https://wa.me/56932273198?text=ayuda",
+        pending: "https://wa.me/56932273198?text=Pendiente de Pago!",
+        success: "https://wa.me/56932273198?text=¡Gracias Pago realizado!"
       }
     };
 
@@ -45,7 +45,7 @@ class PaymentService {
         transaction_amount: 10,
         currency_id: "CLP"
       },
-      back_url: "https://google.com",
+      back_url: "https://wa.me/56932273198?text=hola",
       payer_email: "test_user_22631142@testuser.com"
     };
 
