@@ -18,9 +18,9 @@ class PaymentService {
         }
       ],
       back_urls: {
-        failure: "https://wa.me/56932273198?text=ayuda",
-        pending: "https://wa.me/56932273198?text=Pendiente de Pago!",
-        success: "https://wa.me/56932273198?text=¡Gracias Pago realizado!"
+        failure: "https://wa.me/56973880390?text=ayuda",
+        pending: "https://wa.me/56973880390?text=Pendiente de Pago!",
+        success: "https://wa.me/56973880390?text=¡Gracias Pago realizado!"
       }
     };
 
