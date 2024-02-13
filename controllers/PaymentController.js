@@ -11,8 +11,9 @@ class PaymentController {
       const cantidad = req.query.cantidad;
       const precio = req.query.precio;
       const idVenta = req.query.idventa;
+      const rut = req.query.rut;
 
-      const payment = await this.subscriptionService.createPayment(articulo, correo, cantidad, precio, idventa);
+      const payment = await this.subscriptionService.createPayment(articulo, correo, cantidad, precio, idventa, rut);
 
       return res.json(payment);
     } catch (error) {
