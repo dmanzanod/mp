@@ -14,7 +14,7 @@ class PaymentController {
       const IDventa_ = req.query.idventa;
 
       
-      const payment = await this.subscriptionService.createPayment(articulo, correo, cantidad, precio);
+      const payment = await this.subscriptionService.createPayment(articulo, correo, cantidad, precio, rut, IDventa_);
 
       return res.json(payment);
     } catch (error) {
