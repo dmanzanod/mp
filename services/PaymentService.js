@@ -11,7 +11,7 @@ class PaymentService {
           title: articulo,
           description: articulo,
           picture_url: "http://www.myapp.com/myimage.jpg",
-          category_id: "Lubricante",
+          category_id: "Venta Producto",
           quantity: Number(cantidad),
           currency_id: "CLP",
           unit_price: Number(precio) //precio unitario // Mercado pago convierte
