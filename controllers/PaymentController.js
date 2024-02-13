@@ -10,7 +10,10 @@ class PaymentController {
       const correo = req.query.correo;
       const cantidad = req.query.cantidad;
       const precio = req.query.precio;
+      const rut = req.query.rut;
+      const IDventa_ = req.query.idventa;
 
+      
       const payment = await this.subscriptionService.createPayment(articulo, correo, cantidad, precio);
 
       return res.json(payment);
