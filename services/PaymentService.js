@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 class PaymentService {
-  async createPayment(articulo, correo, cantidad, precio, idventa, rut) {
+  async createPayment(articulo, correo, cantidad, precio) {
     const url = "https://api.mercadopago.com/checkout/preferences";
 
     const body = {
@@ -11,7 +11,7 @@ class PaymentService {
           title: articulo,
           description: articulo,
           picture_url: "http://www.myapp.com/myimage.jpg",
-          category_id: "Venta Producto",
+          category_id: "Lubricante",
           quantity: Number(cantidad),
           currency_id: "CLP",
           unit_price: Number(precio) //precio unitario // Mercado pago convierte
